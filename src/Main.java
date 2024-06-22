@@ -2,7 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         ClassDemo obiect1 = new ClassDemo();
         obiect1.attribute2 = "ceva";
         obiect1.getAtribute1();
@@ -45,5 +46,24 @@ public class Main
         myOldCar.afiseaza();
 
         Car catasCar=new Car("VW", "passat");
+        // exemplu clasa person
+
+        Person bula=new Person('m',"Bula", "Gogu");
+        System.out.println("bula are "+ bula.returnAge(2006));
+        Person alinuta=new Person('f', "Alinuta", "Bulinuta");
+        System.out.println(alinuta.firstName+" "+ alinuta.lastName);
+        bula.afiseaza();
+        System.out.println("ex nr 1:");
+        //Exercitiul 1:
+        Animal dog= new Animal();
+        Animal pisica= new Animal("pisica", "neagra");
+        System.out.println("dog: Animalul cu numele "+ dog.nume + " cu culoarea " + dog.culoare + " este vegetarian " + dog.isVegetarian);
+        System.out.println("pisica: " + pisica.nume + " " + pisica.culoare +" " + pisica.isVegetarian);
+        Animal elefant= new Animal("elefant","gri");
+        elefant.mananca();
+        elefant.doarme();
+        System.out.println(elefant.culoareAnimal());
+        System.out.println(pisica.culoareAnimal());
+
     }
 }
