@@ -2,12 +2,11 @@ public class Animal
 {   public String nume;
     public String culoare;
     public boolean isVegetarian;
-
     public Animal()
     {
-        this.nume="unknown";
-        this.culoare="unknown";
-        this.isVegetarian=true;
+        nume="unknown";
+        culoare="unknown";
+        isVegetarian=true;
     }
 
     public Animal(String nume)
@@ -28,14 +27,14 @@ public class Animal
         this.isVegetarian = isVegetarian;
     }
     public void mananca()
-    {   String numeAnimal=nume;
+    {
         System.out.println(nume+ " mananca");
     }
     public void doarme()
     {
         System.out.println(nume+ " doarme");
     }
-    public String culoareAnimal()
+    public String afiseazaCuloarea()
     {
          String mesaj=nume+ " de culoare " + culoare;
          return mesaj;

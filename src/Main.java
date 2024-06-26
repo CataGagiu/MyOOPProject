@@ -62,8 +62,8 @@ public class Main
         Animal elefant= new Animal("elefant","gri");
         elefant.mananca();
         elefant.doarme();
-        System.out.println(elefant.culoareAnimal());
-        System.out.println(pisica.culoareAnimal());
+        System.out.println(elefant.afiseazaCuloarea());
+        System.out.println(pisica.afiseazaCuloarea());
 
     }
 }
