@@ -64,6 +64,25 @@ public class Main
         elefant.doarme();
         System.out.println(elefant.afiseazaCuloarea());
         System.out.println(pisica.afiseazaCuloarea());
+        // din clasa elev
 
+        Elev elev1= new Elev("Popescu Andrei", 9.68);
+        Elev elev2=new Elev("Popescu Alina", 9.82);
+        elev1.afisareElev();
+        elev2.afisareElev();
+        Elev.diriginte="noul dirig";
+        elev2.mediaGenerala=8;;
+        elev2.afisareElev();
+    EchipaDeFotbal Romania= new EchipaDeFotbal(4,"Romania");
+    EchipaDeFotbal Belgia= new EchipaDeFotbal(6,"Belgia");
+    Romania.afisareEchipa();
+    Belgia.afisareEchipa();
+
+    Fotbalist fotbalist1= new Fotbalist();
+    Volebalist volebalist1=new Volebalist();
+    fotbalist1.seAntreneaza();
+    fotbalist1.seRecupereaza();
+    volebalist1.seAntreneaza();
+    volebalist1.seRecupereaza();
     }
 }
