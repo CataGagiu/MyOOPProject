@@ -1,5 +1,8 @@
+package sport;
+
 public class Fotbalist extends  Sportiv
 {
+    Abilitate abilitate;
     Fotbalist(String nume)
     {
     }
@@ -15,6 +18,17 @@ public class Fotbalist extends  Sportiv
     public void seRecupereaza()
     {
         System.out.println(" fotbalistul se recupereaza");
+    }
+
+    public Fotbalist(Abilitate abilitate)
+    {
+        this.abilitate = abilitate;
+    }
+
+    public void afiseazaDinSuperclasa()
+
+    {
+        super.seRecupereaza();
     }
 
 }

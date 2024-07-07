@@ -1,3 +1,5 @@
+package sport;
+
 public class EchipaDeFotbal
 {
     private int punctaj;

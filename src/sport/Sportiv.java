@@ -1,3 +1,5 @@
+package sport;
+
 public abstract class Sportiv
 {
     public abstract void seAntreneaza();// metoda abstracta nu are implementare

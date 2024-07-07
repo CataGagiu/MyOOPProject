@@ -1,3 +1,5 @@
+package etc;
+
 public class ClassDemo
 {
     private String attribute1;

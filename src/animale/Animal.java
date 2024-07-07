@@ -1,12 +1,15 @@
+package animale;
+
 public class Animal
-{   public String nume;
+{
+    public String nume;
     public String culoare;
     public boolean isVegetarian;
     public Animal()
     {
-        nume="unknown";
-        culoare="unknown";
-        isVegetarian=true;
+        nume = "unknown";
+        culoare = "unknown";
+        isVegetarian = true;
     }
 
     public Animal(String nume)
@@ -26,17 +29,18 @@ public class Animal
         this.culoare = culoare;
         this.isVegetarian = isVegetarian;
     }
-    public void mananca()
+        public void mananca()
     {
-        System.out.println(nume+ " mananca");
+        System.out.println(nume + " mananca");
     }
     public void doarme()
     {
-        System.out.println(nume+ " doarme");
+                System.out.println(nume + " doarme");
     }
+
     public String afiseazaCuloarea()
     {
-         String mesaj=nume+ " de culoare " + culoare;
-         return mesaj;
+        String mesaj = nume + " de culoare " + culoare;
+        return mesaj;
     }
 }

@@ -1,3 +1,5 @@
+package sport;
+
 public class FotbalistAmerican extends Fotbalist
 {
     FotbalistAmerican(String nume) {

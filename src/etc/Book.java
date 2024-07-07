@@ -1,3 +1,5 @@
+package etc;
+
 public class Book
 {
     private double pret=50.0;// pretul nu poate fi modificat din exterior

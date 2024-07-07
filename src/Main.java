@@ -1,3 +1,11 @@
+import animale.Animal;
+import animale.Mamifer;
+import etc.Book;
+import etc.ClassDemo;
+import sport.EchipaDeFotbal;
+import sport.Fotbalist;
+import sport.Volebalist;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main
@@ -56,7 +64,7 @@ public class Main
         System.out.println("ex nr 1:");
         //Exercitiul 1:
         Animal dog= new Animal();
-        Animal pisica= new Animal("pisica", "neagra");
+        Animal pisica= new Mamifer("pisica", "neagra", false, "felina");
         System.out.println("dog: Animalul cu numele "+ dog.nume + " cu culoarea " + dog.culoare + " este vegetarian " + dog.isVegetarian);
         System.out.println("pisica: " + pisica.nume + " " + pisica.culoare +" " + pisica.isVegetarian);
         Animal elefant= new Animal("elefant","gri");
@@ -82,7 +90,20 @@ public class Main
     Volebalist volebalist1=new Volebalist();
     fotbalist1.seAntreneaza();
     fotbalist1.seRecupereaza();
+
     volebalist1.seAntreneaza();
     volebalist1.seRecupereaza();
+
+    Mamifer caine= new Mamifer("caine", "roscat", false, "terestru");
+    Mamifer mata= new Mamifer("mata", "lila-n dungi cu picatele", false, "terestru");
+    caine.sunetAnimal();
+    mata.sunetAnimal();
+    Movie movie1=new Movie();
+    movie1.setTitlu("Titanic");
+    movie1.setTipFilm("drama");
+    movie1.setScorIMDB(8.7);
+        System.out.println(movie1.getTitlu() + " are scorul " + movie1.getScorIMDB()+ " si este " + movie1.getTipFilm());
+        fotbalist1.afiseazaDinSuperclasa();
     }
+
 }
